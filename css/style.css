@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;500;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+.textPurple {
+  color: #502050;
+}
+
+.bgPurple {
+  background-color: #502050;
+  padding: 2% 2%;
+}
+
+.bgGrayishM {
+  background-color: #f7f2f7;
+  padding: 1% 5%;
+  margin: 5% 0;
+}
+
+.title {
+  font-weight: 1000;
+}
+
+@media screen and (max-width: 415px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 2% 5%;
+  }
+  .container .firstSec .firstCont .title {
+    font-size: 2rem;
+  }
+  .container .firstSec .firstCont .content {
+    padding: 2% 2%;
+  }
+  .container .secondCont .reviewsStar {
+    line-height: 1.5rem;
+  }
+  .container .secondCont .reportStar {
+    line-height: 1.5rem;
+  }
+  .container .secondCont .bestStar {
+    line-height: 1.5rem;
+  }
+  .secondSec .cardCom {
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 15% 0;
+  }
+  .secondSec .cardCom .cardHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3% 0;
+  }
+  .secondSec .cardCom .cardHeader .cardImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .secondSec .cardCom .cardHeader .cardImg img {
+    border-radius: 50%;
+    width: 50%;
+  }
+  .secondSec .cardCom .cardHeader .cardTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 2.5rem;
+    -ms-flex-item-align: center;
+        align-self: center;
+    line-height: 150%;
+  }
+  .secondSec .cardCom .cardHeader .cardTitle .userName {
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .secondSec .cardCom .cardHeader .cardTitle .userInf {
+    display: block;
+    margin: 0;
+    color: #ee68a4;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  .secondSec .cardCom .cardContent {
+    text-align: left;
+    color: white;
+    padding: 0 10%;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 0.8rem;
+    word-spacing: 0.5px;
+    line-height: 170%;
+  }
+}
+
+@media screen and (min-width: 416px) and (max-width: 800px) {
+  .container {
+    display: block;
+    padding: 2% 5%;
+  }
+  .container .firstSec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container .firstSec .firstCont {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 42%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .container .firstSec .firstCont .title {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+  }
+  .container .firstSec .firstCont .content {
+    font-size: 0.9rem;
+    color: #937b92;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 1%;
+  }
+  .container .firstSec .secondCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 55%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .firstSec .secondCont .reviewsStar {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 2% 0;
+    width: 60%;
+    margin: 2% 0;
+    text-align: center;
+  }
+  .container .firstSec .secondCont .reviewsStar h3 {
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 3%;
+  }
+  .container .firstSec .secondCont .reportStar {
+    padding: 2% 0;
+    width: 65%;
+    margin: 2% 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  .container .firstSec .secondCont .reportStar h3 {
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 3%;
+  }
+  .container .firstSec .secondCont .bestStar {
+    padding: 2% 0;
+    width: 60%;
+    margin: 2% 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    text-align: center;
+  }
+  .container .firstSec .secondCont .bestStar h3 {
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 3%;
+  }
+  .container .secondSec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 40vh;
+  }
+  .container .secondSec .card1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .container .secondSec .card2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .container .secondSec .card3 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .container .secondSec .cardCom {
+    border-radius: 10px;
+    padding: 0;
+    width: 33%;
+  }
+  .container .secondSec .cardCom .cardHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10% 0;
+  }
+  .container .secondSec .cardCom .cardHeader .cardImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .secondSec .cardCom .cardHeader .cardImg img {
+    border-radius: 50%;
+    width: 50%;
+  }
+  .container .secondSec .cardCom .cardHeader .cardTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 2.5rem;
+    -ms-flex-item-align: center;
+        align-self: center;
+    line-height: 150%;
+  }
+  .container .secondSec .cardCom .cardHeader .cardTitle .userName {
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .container .secondSec .cardCom .cardHeader .cardTitle .userInf {
+    display: block;
+    margin: 0;
+    color: #ee68a4;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  .container .secondSec .cardCom .cardContent {
+    text-align: left;
+    color: white;
+    padding: 0 10%;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 0.75rem;
+    word-spacing: 0.5px;
+    line-height: 170%;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .container {
+    display: block;
+    padding: 2% 5%;
+  }
+  .container .firstSec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container .firstSec .firstCont {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 25%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .container .firstSec .firstCont .title {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    width: 70%;
+  }
+  .container .firstSec .firstCont .content {
+    font-size: 0.85rem;
+    color: #937b92;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 1%;
+  }
+  .container .firstSec .secondCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .firstSec .secondCont .reviewsStar {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 2% 0;
+    width: 65%;
+    margin: 1% 0;
+    text-align: center;
+  }
+  .container .firstSec .secondCont .reviewsStar h3 {
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 3%;
+  }
+  .container .firstSec .secondCont .reportStar {
+    padding: 2% 0;
+    width: 68%;
+    margin: 2% 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  .container .firstSec .secondCont .reportStar h3 {
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 3%;
+  }
+  .container .firstSec .secondCont .bestStar {
+    padding: 2% 0;
+    width: 65%;
+    margin: 2% 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    text-align: center;
+  }
+  .container .firstSec .secondCont .bestStar h3 {
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 3%;
+  }
+  .container .secondSec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40vh;
+    width: 82.5%;
+    justify-self: center;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .secondSec .card1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .container .secondSec .card2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .container .secondSec .card3 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .container .secondSec .cardCom {
+    border-radius: 10px;
+    padding: 2%;
+    width: 25%;
+  }
+  .container .secondSec .cardCom .cardHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5% 0;
+  }
+  .container .secondSec .cardCom .cardHeader .cardImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .secondSec .cardCom .cardHeader .cardImg img {
+    border-radius: 50%;
+    width: 50%;
+  }
+  .container .secondSec .cardCom .cardHeader .cardTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 2.5rem;
+    -ms-flex-item-align: center;
+        align-self: center;
+    line-height: 150%;
+  }
+  .container .secondSec .cardCom .cardHeader .cardTitle .userName {
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .container .secondSec .cardCom .cardHeader .cardTitle .userInf {
+    display: block;
+    margin: 0;
+    color: #ee68a4;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  .container .secondSec .cardCom .cardContent {
+    text-align: left;
+    color: white;
+    padding: 0 6%;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 0.9rem;
+    word-spacing: 0.5px;
+    line-height: 170%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;500;600;800&display=swap')
+$veryDarkMagenta: hsl(300, 43%, 22%)
+$softPink: hsl(333, 80%, 67%)
+$darkGrayishMagenta: hsl(303, 10%, 53%)
+$lightGrayishMagenta: hsl(300, 24%, 96%)
+$white: hsl(0, 0%, 100%)
+$fontFam: 'Spartan', sans-serif
+*
+    padding: 0
+    margin: 0
+body
+    font-size: 15px
+    font-family: $fontFam
+.textPurple
+    color: $veryDarkMagenta
+.bgPurple
+    background-color: $veryDarkMagenta
+    padding: 2% 2%
+.bgGrayishM
+    background-color: $lightGrayishMagenta
+    padding: 1% 5%
+    margin: 5% 0       
+.title 
+    font-weight: 1000
+@media screen and ( max-width:415px  )
+    @import "./_smallscreen"
+@media screen and (min-width:416px) and (max-width:800px)
+    @import "./_midscreen"
+@media screen and (min-width:801px)
+    @import "./_bigscreen.sass"
